@@ -1,0 +1,13 @@
+li h1 {
+  float: left;
+  font-size: 30px;
+  width: 100px;
+  vertical-align: middle;
+}
+h1.clock {
+  float: right;
+  font-size: 40px;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+}
