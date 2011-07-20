@@ -67,7 +67,7 @@ TimeTrack.prototype.on_timeout = function(f){
 $(document).ready(function() {
 	var players = [];
 	$('.clock').each(function(){
-		var t = new TimeTrack(480000);
+		var t = new TimeTrack(360000);
 		players.push(t);
 		var that = this;
 		t.on_tick( function(remaining) {
@@ -91,10 +91,10 @@ $(document).ready(function() {
 		$.each(players, function(){
 			this.pause();
 			this.reset();
-			this.add_time(420000);
+			this.add_time(360000);
 		});
 		$('.clock').each(function(){
-			$(this).html("7:00"); // :D
+			$(this).html("6:00"); // :D
 		})
 	});
 });
